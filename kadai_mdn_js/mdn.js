@@ -1,5 +1,6 @@
-const today = () => {
-    console.log('2026年2月20日');
-}
+const date = new Date();
+const year = date.getFullYear();
+const month = date.getMonth() + 1;
+const day = date.getDate();
 
-today(); 
+console.log(year + '年' + month + '月' + day + '日');
