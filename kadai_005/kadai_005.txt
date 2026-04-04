@@ -1,0 +1,51 @@
+PS C:\Users\MyPC> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\MyPC
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2026/04/04     18:46                git_challenge
+
+
+PS C:\Users\MyPC> cd git_challenge
+PS C:\Users\MyPC\git_challenge> git init
+Initialized empty Git repository in C:/Users/MyPC/git_challenge/.git/
+PS C:\Users\MyPC\git_challenge> git add hello_world.txt
+PS C:\Users\MyPC\git_challenge> git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello_world.txt/hello_world.txt.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\MyPC\git_challenge> git add hello_world.txt
+PS C:\Users\MyPC\git_challenge> git commit -m "Add Hello, world! to hello_world.txt"
+[main 3ffec0a] Add Hello, world! to hello_world.txt
+ 1 file changed, 1 insertion(+)
+PS C:\Users\MyPC\git_challenge> git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello_world.txt/hello_world.txt.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\MyPC\git_challenge> git add hello_world.txt
+PS C:\Users\MyPC\git_challenge> git commit -m "Add こんにちは、世界！ to hello_world.txt"
+[main ca63830] Add こんにちは、世界！ to hello_world.txt
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\MyPC\git_challenge> git log
+commit ca63830bfd33b3c89bfed81750ff4b034ef34cc4 (HEAD -> main)
+Author: yuto-shibahara <y27142228@gmail.com>
+Date:   Sat Apr 4 19:14:48 2026 +0900
+
+    Add こんにちは、世界！ to hello_world.txt
+
+commit 3ffec0a18ff673820a5829d3e80ecb6ad6a01f63
+Author: yuto-shibahara <y27142228@gmail.com>
+Date:   Sat Apr 4 19:12:56 2026 +0900
+
+    Add Hello, world! to hello_world.txt
